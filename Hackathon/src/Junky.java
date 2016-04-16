@@ -17,14 +17,18 @@ public class Junky extends JFrame {
     	panel.setLayout(null);
     	
         JButton quitButton = new JButton("Quit");
-        quitButton.setBounds(80, 60, 80, 30);
+        quitButton.setBounds(0, 0, 70, 50);
         panel.setToolTipText("This is a button");
         quitButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent event) {
                 System.exit(0);
            }
         });
+        JButton otherButton = new JButton("I'm a button!");
+        otherButton.setBounds(70, 0, 70, 50);
+        panel.setToolTipText("My Name Jeff");
         panel.add(quitButton);
+        panel.add(otherButton);
         
         setTitle("ButtonTest");
         setSize(300, 400);
