@@ -12,6 +12,6 @@ public class Junky extends JFrame {
 
     public static void main(String[] args) {
        Junky ex = new Junky();
-       ex.setVisible(true);
+       ex.setVisible(true); 
     }
 }
