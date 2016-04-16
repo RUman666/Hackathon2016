@@ -4,12 +4,15 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JPanel;
 import javax.swing.JButton;
-public class Junky extends JFrame {
-
-    public Junky() {
+public class Junky extends JFrame 
+{
+    public Junky() 
+    {
        initUI();
     }
-    public final void initUI() {
+    
+    public final void initUI() 
+    {
     	
     	JPanel panel = new JPanel();
     	getContentPane().add(panel);
@@ -19,11 +22,15 @@ public class Junky extends JFrame {
         JButton quitButton = new JButton("Quit");
         quitButton.setBounds(0, 0, 70, 50);
         panel.setToolTipText("This is a button");
-        quitButton.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent event) {
+        quitButton.addActionListener(new ActionListener() 
+        {
+            public void actionPerformed(ActionEvent event) 
+            {
                 System.exit(0);
-           }
+            }
+
         });
+        
         JButton otherButton = new JButton("I'm a button!");
         otherButton.setBounds(70, 0, 70, 50);
         panel.setToolTipText("My Name Jeff");
@@ -35,7 +42,8 @@ public class Junky extends JFrame {
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
        Junky ex = new Junky();
        ex.setVisible(true); 
     }
